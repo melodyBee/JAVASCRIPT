@@ -5,11 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function age(birthyear,current){
+            var Age= current-birthyear;
+            alert(Age);
+        }
+    </script>
 </head>
 <body>
-    Assignment -1 
-
-    <script src="./app.js">
+    <script>
+        console.log("before your page’s HTML")
     </script>
+    Assignment -1 
+    <!-- 7. Practice placement of <script></script> element in 
+    following sections of your project in exercise 6:
+    a. Head
+    b. Body (before your page’s HTML)
+    c. Body (inside your page’s HTML)
+    d. Body (after your page’s HTML) -->
+    <script>
+        var birthyear=prompt("Enter your Birth Year");
+        var current=prompt("Enter current year");
+        age(+birthyear,+current)
+    </script>
+
+    <script src="app.js"></script>
 </body>
 </html>
