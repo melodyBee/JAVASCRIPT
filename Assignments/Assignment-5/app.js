@@ -1,42 +1,42 @@
 // MATH EXPRESSIONS
 // 1. Write a program that take two numbers & add them in a 
 // new variable. Show the result in your browser.
+var a=prompt("enter a number");
+var b=prompt("enter another number");
+var num1= parseInt(a);
+var num2= parseInt(b);
+var sum=num1+num2;
+console.log(sum);
+
 // 2. Repeat task1 for subtraction, multiplication, division &
 // modulus.
+console.log( num1-num2);
+console.log(num1*num2);
+console.log(num1/num2);
+console.log(num1%num2);
 // 3. Do the following using JS Mathematic Expressions
 // a. Declare a variable.
-// b. Show the value of variable in your browser like “Value
-// after variable declaration is: ??”.
+var a;
+// b. Show the value of variable in your browser like “Value after variable declaration is: ??”.
 // c. Initialize the variable with some number.
-// d. Show the value of variable in your browser like “Initial
-// value: 5”.
+// d. Show the value of variable in your browser like “Initial value: 5”.
 // e. Increment the variable.
-// f. Show the value of variable in your browser like “Value
-// after increment is: 6”.
+// f. Show the value of variable in your browser like “Value after increment is: 6”.
 // g. Add 7 to the variable.
-// h. Show the value of variable in your browser like “Value
-// MATH EXPRESSIONS | JAVASCRIPT
-// Page 2 of 9
-// after addition is: 13”.
+// h. Show the value of variable in your browser like “Value after addition is: 13”.
 // i. Decrement the variable.
-// j. Show the value of variable in your browser like “Value
-// after decrement is: 12”.
-// k. Show the remainder after dividing the variable’s value 
-// by 3. 
+// j. Show the value of variable in your browser like “Value after decrement is: 12”.
+// k. Show the remainder after dividing the variable’s value by 3. 
 // l. Output : “The remainder is : 0”.
-// 4. Cost of one movie ticket is 600 PKR. Write a script to 
-// store
-// ticket price in a variable & calculate the cost of buying 5 
-// tickets
-// to a movie. Example output:
-// MATH EXPRESSIONS | JAVASCRIPT
-// Page 3 of 9
-// 5. Write a script to display multiplication table of any 
-// number in your browser. E.g
-// MATH EXPRESSIONS | JAVASCRIPT
-// Page 4 of 9
-// 6. The Temperature Converter: It’s hot out! Let’s make a 
-// converter based on the steps here.
+// 4. Cost of one movie ticket is 600 PKR. Write a script to store
+// ticket price in a variable & calculate the cost of buying 5 tickets to a movie. Example output:
+
+// 5. Write a script to display multiplication table of any number in your browser.
+for(i=1;i<11;i++){
+    multi=i*6;
+    console.log(6 +'x'+ i+'='+multi)
+}
+// 6. The Temperature Converter: It’s hot out! Let’s make a converter based on the steps here.
 // a. Store a Celsius temperature into a variable.
 // b. Convert it to Fahrenheit & output “NNoC is NNoF”.
 // c. Now store a Fahrenheit temperature into a variable.

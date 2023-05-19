@@ -9,8 +9,9 @@ var visit;
 
 // 3. Declare a variable called birthYear & assign to it your
 // birth year. Show the following message in your browser:
-// VARIABLES FOR NUMBERS | JAVASCRIPT
-// Page 2 of 3
+var birthYear= 2006;
+'My birth year is '+ age;
+'Data type of my declared variable is number.';
 // 4. A visitor visits an online clothing store
 // www.xyzClothing.com . Write a script to store in variables
 // the following information:
