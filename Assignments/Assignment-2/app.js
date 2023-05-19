@@ -35,6 +35,7 @@ var book=prompt();
 var book="A smarter way to learn JavaScript";
 alert("I am trying to learn from the Book A smart way to learn Javascript");
 // 8. Write a script to display this in browser through JS
+document.write('Yeah! I can write HTML through Javascript')
 // print('Yeah! I can write HTML through Javascript');
 // 9. Store following string in a variable and show in alert and 
 // browser through JS
