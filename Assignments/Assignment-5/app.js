@@ -34,7 +34,7 @@ var a;
 // 5. Write a script to display multiplication table of any number in your browser.
 for(i=1;i<11;i++){
     multi=i*6;
-    console.log(6 +'x'+ i+'='+multi)
+    console.log(6 +'x'+ i+'='+multi);
 }
 // 6. The Temperature Converter: It’s hot out! Let’s make a converter based on the steps here.
 // a. Store a Celsius temperature into a variable.
