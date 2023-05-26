@@ -16,17 +16,25 @@ console.log(num1/num2);
 console.log(num1%num2);
 // 3. Do the following using JS Mathematic Expressions
 // a. Declare a variable.
-var a;
+var variablee;
 // b. Show the value of variable in your browser like “Value after variable declaration is: ??”.
+console.log("Value after variable declaration is " +variablee)
 // c. Initialize the variable with some number.
+var variablee=2;
 // d. Show the value of variable in your browser like “Initial value: 5”.
+console.log("initial value: "+ variablee);
 // e. Increment the variable.
 // f. Show the value of variable in your browser like “Value after increment is: 6”.
+console.log("Value after increment is: "+ ++variablee);
 // g. Add 7 to the variable.
+var variablee= variablee+7;
 // h. Show the value of variable in your browser like “Value after addition is: 13”.
+console.log("Value after addition of 7 is: "+variablee);
 // i. Decrement the variable.
 // j. Show the value of variable in your browser like “Value after decrement is: 12”.
+console.log(--variablee);
 // k. Show the remainder after dividing the variable’s value by 3. 
+remainder= variablee%3; console.log("Remainder after dividing by 3 "+remainder)
 // l. Output : “The remainder is : 0”.
 // 4. Cost of one movie ticket is 600 PKR. Write a script to store
 // ticket price in a variable & calculate the cost of buying 5 tickets to a movie. Example output:
