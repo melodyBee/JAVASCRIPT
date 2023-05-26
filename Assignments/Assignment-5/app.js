@@ -99,44 +99,52 @@ var total_marks=980;
 var marks_obt= 804;
 var percentage= (marks_obt/total_marks)*100; 
 document.write('Total marks= '+ total_marks + '<br>'+ 'Marks obtained='+ marks_obt + '<br>' + 'Percentage= '+ percentage + '%');
+
 // 9. Assume we have 10 US dollars & 25 Saudi Riyals. Write a 
 // script to convert the total currency to Pakistani Rupees. 
 // Perform all calculations in a single expression.
-// (Exchange rates : 1 US Dollar = 104.80 Pakistani Rupee 
-// and 1 Saudi Riyal = 28 Pakistani Rupee)
-
-document.write('<h3>  </h3>');
+// (Exchange rates : 1 US Dollar =  104.80 Pakistani Rupee 
+// and 1 Saudi Riyal =  28 Pakistani Rupee)
+document.write('<h3> Task 9 </h3>');
+var one_doller=  104.80;
+var one_riyal=  28;
+var total_currency= (one_doller*10)+(one_riyal*25);
+document.write('Total Currency in Pkr= '+ total_currency);
 
 // 10. Write a program to initialize a variable with some 
 // number and do arithmetic in following sequence:
-document.write('<h3>  </h3>');
+document.write('<h3> Task 10 </h3>');
+var ten_var=7;
 // a. Add 5
 // b. Multiply by 10
 // c. Divide the result by 2
 // Perform all calculations in a single expression
-
+document.write(((ten_var+5)*10)/2);
 // 11. The Age Calculator: Forgot how old someone is? 
 // Calculate it!
-document.write('<h3>  </h3>');
+document.write('<h3> Task 11 </h3>');
 // a. Store the current year in a variable.
-// b. Store their birth year in a variable.
-// c. Calculate their 2 possible ages based on the stored 
-// values.
-// Output them to the screen like so: “They are either NN or NN
-// years old”.
+var current_year= 2023;
+// b. Store the birth year in a variable.
+var birth_year=prompt('Enter the Year of birth');
+
+// c. Calculate the age based on the stored values.
+var Age= current_year-birth_year;
+// Output them to the screen like so: “They are NN ”.
+document.write('Current Year= 2023<br>Birth Year='+ birth_year +'<br>Your age is='+ Age );
 // 12. The Geometrizer: Calculate properties of a circle.
-document.write('<h3>  </h3>');
+document.write('<h3> Task 12 </h3>');
 // a. Store a radius into a variable.
-// b. Calculate the circumference based on the radius, and
-// output “The circumference is NN”.
+// b. Calculate the circumference based on the radius, and output “The circumference is NN”.
 // (Hint : Circumference of a circle = 2 π r , π = 3.142)
 // Calculate the area based on the radius, and output “The 
 // area is NN”. (Hint : Area of a circle = π r2, π = 3.142)
+
+
 // 13. The Lifetime Supply Calculator: Ever wonder how
 // much a “lifetime supply” of your favorite snack is? 
 // Wonder no more.
-document.write('<h3>  </h3>');
-
+document.write('<h3> Task 13 </h3>');
 // a. Store your favorite snack into a variable
 // b. Store your current age into a variable.
 // c. Store a maximum age into a variable.
