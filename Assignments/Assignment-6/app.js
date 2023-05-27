@@ -2,6 +2,20 @@
 // 1. Write a program to take a number in a variable, do the
 // required arithmetic to display the following result in your
 // browser:
+var a=10;
+document.write('Result: <br>The value of a is: '+ a);
+document.write('<br>----------------------<br>');
+document.write('<br>The value of ++a is: '+ ++a);
+document.write('<br>Now the value of a is: '+ a);
+
+document.write('<br> <br> The value of a++ is: '+ a++);
+document.write('<br> Now the value of a is: '+ a);
+
+document.write('<br><br> The value of --a is: '+ --a);
+document.write('<br> Now the value of a is: '+ a);
+
+document.write('<br><br>The value of a--'+ a--);
+document.write('<br>Now the value of a is: '+ a);
 // 2. What will be the output in variables a, b & result after
 // execution of the following script:
 // var a = 2, b = 1;
