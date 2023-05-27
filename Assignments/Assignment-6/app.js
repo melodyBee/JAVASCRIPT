@@ -53,14 +53,27 @@ for(i=1;i<11;i++){
     document.write(inputNum +'x'+ i+'='+multi+'<br>');
 }
 // 6. Take
+document.write('<h3> Task 5 </h3>');
 // a) Take three subjects name from user and store them in 3 
 // different variables.
+var sub1=prompt("Enter subject 1 name");
+var sub2=prompt("Enter subject 2 name");
+var sub3=prompt("Enter subject 3 name");
 // b) Total marks for each subject is 100, store it in another 
 // variable.
+var totalMarks= 100*3;
 // c) Take obtained marks for first subject from user and 
 // stored it in different variable.
+var sub1Marks= prompt("Enter subject 1 Marks");
+var sub2Marks=prompt("Enter subject 2 Marks");
+var sub3Marks=prompt("Enter subject 3 Marks");
 // d) Take obtained marks for remaining 2 subjects from user 
 // and store them in variables.
+var sub1Marks= +sub1Marks;
+var sub2Marks= +sub2Marks;
+var sub3Marks= +sub3Marks;
 // e) Now calculate total marks and percentage and show the 
 // result in browser like this.(Hint: user table)
-document.write('<h3> Task 5 </h3>');
+var marks_obt= sub1Marks + sub2Marks + sub3Marks;
+var per=(marks_obt/totalMarks)*100;
+
