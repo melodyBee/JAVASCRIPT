@@ -16,6 +16,7 @@ document.write('<br> Now the value of a is: '+ a);
 
 document.write('<br><br>The value of a--'+ a--);
 document.write('<br>Now the value of a is: '+ a);
+
 // 2. What will be the output in variables a, b & result after
 // execution of the following script:
 // var a = 2, b = 1;
@@ -25,15 +26,23 @@ document.write('<br>Now the value of a is: '+ a);
 // --a - --b;
 // --a - --b + ++b;
 // --a - --b + ++b + b--;
-// ALERTS | JAVASCRIPT
-// Page 2 of 3
+var a=2, b=1;
+document.write('a is: '+ a);
+document.write('b is: '+ b);
+var result = --a - --b + ++b + b--;
+document.write('result is: '+ result);
+
 // 3. Write a program that takes input a name from user & 
 // greet the user.
+var input= prompt("Enter your name");
+alert("Welcome "+ input);
+
 // 4.
 // 5. Write a program to take input a number from user & 
 // display it’s multiplication table on your browser. If user 
 // does not enter a new number, multiplication table of 5 
 // should be displayed by default.
+
 // 6. Take
 // a) Take three subjects name from user and store them in 3 
 // different variables.
