@@ -135,21 +135,38 @@ document.write('Current Year= 2023<br>Birth Year='+ birth_year +'<br>Your age is
 // 12. The Geometrizer: Calculate properties of a circle.
 document.write('<h3> Task 12 </h3>');
 // a. Store a radius into a variable.
+var r= prompt("Enter radius of a circle");
+document.write('Radius of a circle is='+ r);
 // b. Calculate the circumference based on the radius, and output “The circumference is NN”.
 // (Hint : Circumference of a circle = 2 π r , π = 3.142)
+var circumference=2*3.142*r;
+document.write('<br>circumference of a circle is='+ circumference);
 // Calculate the area based on the radius, and output “The 
 // area is NN”. (Hint : Area of a circle = π r2, π = 3.142)
-
+var AreaOfACircle= 3.142*r*2;
+document.write('<br>Area of a crircle='+ AreaOfACircle);
 
 // 13. The Lifetime Supply Calculator: Ever wonder how
 // much a “lifetime supply” of your favorite snack is? 
 // Wonder no more.
 document.write('<h3> Task 13 </h3>');
 // a. Store your favorite snack into a variable
+var snack = "chocolate chips";
+document.write('Favourite snacks: '+ snack);
 // b. Store your current age into a variable.
+var currentAge= 16;
+document.write('<br>Current age: '+ currentAge);
 // c. Store a maximum age into a variable.
+var maxAge= 65;
+document.write('<br>Estimate Maximum Age: '+ maxAge);
 // d. Store an estimated amount per day (as a number).
+var amountPerDay= 2;
+document.write('<br>Amount of snacks per day: '+ amountPerDay);
 // e. Calculate how many would you eat total for the rest of
 // your life.
 // Output the result to the screen like so: “You will need 
 // NNNN to last you until the ripe old age of NN”.
+var yearLeft= maxAge-Age;
+var daysLeft= yearLeft*365;
+var total_snack= daysLeft*amountPerDay;
+document.write('<br>You will need'+ total_snack +' '+ snack + 'to last you until the ripe old age of ' + maxAge + '.');
