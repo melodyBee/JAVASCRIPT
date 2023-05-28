@@ -99,41 +99,42 @@ else {
 // percentage on your page. Take percentage & compute 
 // grade as per following table:
 
-// document.write('<h3> Task 6 </h3>');
-// var sub1Marks= prompt("Enter subject 1 Marks");
-// var sub2Marks=prompt("Enter subject 2 Marks");
-// var sub3Marks=prompt("Enter subject 3 Marks");
+document.write('<h3> Task 6 </h3>');
+var sub1Marks= prompt("Enter subject 1 Marks");
+var sub2Marks=prompt("Enter subject 2 Marks");
+var sub3Marks=prompt("Enter subject 3 Marks");
 
-// var sub1Marks= parseInt(sub1Marks);
-// var sub2Marks= parseInt(sub2Marks);
-// var sub3Marks= parseInt(sub3Marks);
-// var marks_obt= sub1Marks + sub2Marks + sub3Marks;
-// var per=(marks_obt/totalMarks)*100;
+var sub1Marks= parseInt(sub1Marks);
+var sub2Marks= parseInt(sub2Marks);
+var sub3Marks= parseInt(sub3Marks);
+var marks_obt= sub1Marks + sub2Marks + sub3Marks;
 
-// document.write('Total marks : '+ 300);
-// document.write('<br>Marks obtained : '+ marks_obt );
-// document.write('<br><br>Percentage : '+ per);
-// // Show the total marks, marks obtained, percentage, grade &
-// // remarks like:
-// if(80>per){
-//     document.write('<br>Grade:  A-one');
-//     document.write('<br>Reamrks : Excellent');
-// }
-// else
-// if(70>per){
-//     document.write('<br>Grade: A');
-//     document.write('<br>Reamrks : Good');
-// }
-// else
-// if(60>per){
-//     document.write('<br>Grade:  B');
-//     document.write('<br>Reamrks : You need to improve');
-// }
-// else
-// if(60<per){
-//     document.write('<br>Grade:  Fail');
-//     document.write('<br>Remarks : Sorry');
-// }
+var per=(marks_obt/300)*100;
+
+document.write('Total marks : '+ 300);
+document.write('<br>Marks obtained : '+ marks_obt );
+document.write('<br><br>Percentage : '+ per);
+// Show the total marks, marks obtained, percentage, grade &
+// remarks like:
+if(80>per){
+    document.write('<br>Grade:  A-one');
+    document.write('<br>Reamrks : Excellent');
+}
+else
+if(70>per){
+    document.write('<br>Grade: A');
+    document.write('<br>Reamrks : Good');
+}
+else
+if(60>per){
+    document.write('<br>Grade:  B');
+    document.write('<br>Reamrks : You need to improve');
+}
+else
+if(60<per){
+    document.write('<br>Grade:  Fail');
+    document.write('<br>Remarks : Sorry');
+}
 
 
 // 7. Guess game:
