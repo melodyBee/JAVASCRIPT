@@ -38,7 +38,14 @@ switch(signalColor){
 // litres) from user. If the current fuel is less than 0.25litres, 
 // show the message “Please refill the fuel in your car”
 document.write('<h3> Task 4 </h3>');
-
+var fuel = prompt("Enter remaining fuel in car in litres");
+fuel = Number(fuel);
+if (fuel < 0.25) {
+  alert("Please refill the fuel in your car");
+} 
+else {
+  alert("You have enough fuel in your car");
+}
 // 5. Run this script, & check whether alert message would be
 // displayed or not. Record the outputs.
 // a. 
