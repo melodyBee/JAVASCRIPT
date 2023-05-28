@@ -24,7 +24,8 @@ document.write('<h3> Task 6 </h3>');
 // BS, BCOM, MS, M. Phil., PhD). Show the listed 
 // qualifications in your browser like:
 document.write('<h3> Task 7 </h3>');
-
+var edQualification=[' SSC', 'HSC', 'BCS', 'BS', 'BCOM', 'MS', 'M. Phil', 'PhD']
+document.write('Qulification'+ edQualification)
 // 8. Write a program to store 3 student names in an array.Take
 // another array to store score of these three students. 
 // Assume that total marks are 500 for each student, display 
