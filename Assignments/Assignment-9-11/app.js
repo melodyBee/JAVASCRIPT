@@ -138,9 +138,7 @@ if(60<per){
 
 
 // 7. Guess game:
-
 document.write('<h3> Task 7 </h3>');
-
 // Store a secret number (ranging from 1 to 10) in a variable.
 var secretNum= 7;
 // Prompt user to guess the secret number.
@@ -161,19 +159,51 @@ if(guessNum==secretNum+1||guessNum==secretNum-1){
 // divisible by 3. Show the message to the user if the number 
 // is divisible by 3.
 document.write('<h3> Task 8 </h3>');
-
+var num = prompt("Enter a number");
+num = parseInt(num);
+if(num % 3 == 0){
+    document.write(num + " is divisible by 3");
+}
+else{
+    document.write(num +"is not divisible by 3");
+}
 // 9. Write a program that checks whether the given input is an
 // even number or an odd number.
 document.write('<h3> Task 9 </h3>');
-
+var input= prompt("Enter a number");
+input =parseInt(input);
+if(input % 2 == 0){
+    document.write(input + " is an even number");
+}
+else{
+    document.write(input + " is an odd number");
+}
 // 10. Write a program that takes temperature as input and 
 // shows a message based on following criteria
 document.write('<h3> Task10 </h3>');
+var temp = prompt("Enter the temperature");
 
-// a. T > 40 then “It is too hot outside.”
-// b. T > 30 then “The Weather today is Normal.”
-// c. T > 20 then “Today’s Weather is cool.”
-// d. T > 10 then “OMG! Today’s weather is so Cool.”
+temp = parseInt(temp);
+
+if(temp > 40){
+    // a. T > 40 then “It is too hot outside.”
+    document.write("It is too hot outside.");
+}
+else if(temp > 30){
+    // b. T > 30 then “The Weather today is Normal.”
+    document.write("The Weather today is Normal.");
+}
+else if(temp > 20){
+    // c. T > 20 then “Today’s Weather is cool.”
+    document.write("Today’s Weather is cool.");
+}
+else if(temp > 10){
+    // d. T > 10 then “OMG! Today’s weather is so Cool.”
+    document.write("OMG! Today’s weather is so Cool.");
+}
+else{
+    document.write("It is freezing outside.");
+}
 
 // 11. Write a program to create a calculator for +,-,*, / & % 
 // using if statements. Take the following input:
