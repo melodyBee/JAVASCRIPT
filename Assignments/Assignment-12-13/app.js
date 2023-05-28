@@ -6,10 +6,47 @@
 // codes:- A=65, Z=90, a=97, z=122).
 document.write('<h3> Task 1 </h3>');
 var character=prompt("Enter any character");
+var character = String(character);
+if(character.length == 1){
+
+    if(Number.isInteger(Number(character))){
+        document.write(character + " is a number");
+    }
+    else{
+        if(character == character.toUpperCase()){
+            document.write(character + " is an uppercase letter");
+        }
+        else if(character == character.toLowerCase()){
+            document.write(character + " is a lowercase letter");
+        }
+        else{
+            document.write(character + " is not a number or a letter");
+        }
+    }
+}
+else{
+
+    document.write("Please enter only one character");
+}
 
 // 2. Write a JavaScript program that accept two integers and
 // display the larger. Also show if the two integers are equal.
 document.write('<h3> Task 2 </h3>');
+var num1 = prompt("Enter the first integer");
+num1 = parseInt(num1);
+//get the second integer from the user
+var num2 = prompt("Enter the second integer");
+num2 = parseInt(num2);
+if(num1 > num2){
+    document.write(num1 +"is greater than"+ num2);
+}
+else 
+if(num1 < num2){
+    document.write(num2 +"is greater than"+ num1);
+}
+else{
+    document.write(num1 +"and"+ num2 +"are equal");
+}
 
 // 3. Write a program that takes input a number from user & 
 // state whether the number is positive, negative or zero.
