@@ -92,6 +92,7 @@ var quantity_2=7;
 var shipping_charges=100;
 var total_amount= (item_1*quantity_1)+(item_2*quantity_2)+shipping_charges;
 document.write('Price of item 1='+ item_1  +'<br>'+'Quantity of item 1 is='+ quantity_1 +'<br>'+'Price of item 2 is='+ item_2  +'<br>'+'Quantity of item 2 is='+ quantity_2 + '<br>' +'Shipping Charges='+ shipping_charges + '<br>' + 'Total amount of your order is='+ total_amount );
+
 // 8. Store total marks & marks obtained by a student in 2 
 // variables. Compute the percentage & show the result in your browser
 document.write('<h3> Task 8 </h3>');
@@ -115,6 +116,7 @@ document.write('Total Currency in Pkr= '+ total_currency);
 // number and do arithmetic in following sequence:
 document.write('<h3> Task 10 </h3>');
 var ten_var=7;
+
 // a. Add 5
 // b. Multiply by 10
 // c. Divide the result by 2
