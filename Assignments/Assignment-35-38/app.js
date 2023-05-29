@@ -87,16 +87,18 @@ document.write("<h3>Task 8</h3>");
 // Take base and perpendicular as inputs.
 var base=prompt("Enter base");
 var perpendicular=prompt("Enter perpendicular");
-// Outer function : calculateHypotenuse()
-function hypotenuse(a,b){
-  var Hypotenuse2 = (a*2*2) + (b*2*2);
-// Inner function: calculateSquare()
-  function Squarefunc(Hypotenuse){
 
+function hypotenuse(base, perpendicular) {
+  function calculateSquare(side) {
+    return side * side;
   }
-}
+  var baseSquare = calculateSquare(base);
+  var perpendicularSquare = calculateSquare(perpendicular);
+  var hypotenuseSquare = baseSquare + perpendicularSquare;
+  var hypotenuse = Math.sqrt(hypotenuseSquare);
 
-//calling the function
+  document.write("Hypotenuse ="+ hypotenuse) ;
+}
 hypotenuse(base,perpendicular);
 
 // 9. Write a function that calculates the area of a rectangle.
@@ -117,6 +119,22 @@ areaOfRec(a,b);
 // A palindrome is word, phrase, or sequence that reads the same backward as 
 // forward, e.g., madam.
 document.write("<h3>Task 10</h3>");
+function isPalindrome(str) {
+  var processedStr = str.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+  for (var i = 0; i < processedStr.length / 2; i++) {
+    if (processedStr[i] !== processedStr[processedStr.length - 1 - i]) {
+      return false; 
+    }
+  }
+  return true; 
+}
+var input = prompt("Enter a word or phrase:");
+var result = isPalindrome(input);
+if (result) {
+  console.log("The input is a palindrome.");
+} else {
+  console.log("The input is not a palindrome.");
+}
 
 // 11. Write a JavaScript function that accepts a string as a 
 // parameter and converts the first letter of each word of the 
@@ -124,33 +142,82 @@ document.write("<h3>Task 10</h3>");
 // EXAMPLE STRING : 'the quick brown fox'
 // EXPECTED OUTPUT : 'The Quick Brown Fox'
 document.write("<h3>Task 11</h3>");
+function capitalizeFirstLetter(str) {
+  var words = str.split(' '); // Split the string into an array of words
+  for (var i = 0; i < words.length; i++) {
+    var word = words[i];
+    var capitalizedWord = word.charAt(0).toUpperCase() + word.slice(1);
+    words[i] = capitalizedWord;
+  }
+  var result = words.join(' ');
+  return result;
+}
+var input = prompt("Enter a sentence:");
+var output = capitalizeFirstLetter(input);
+document.write("Output:"+ output);
 
 // 12. Write a JavaScript function that accepts a string as a 
 // parameter and find the longest word within the string. 
 // EXAMPLE STRING : 'Web Development Tutorial'
 // EXPECTED OUTPUT : 'Development'
 document.write("<h3>Task 12</h3>");
+function findLongestWord(str) {
+  var words = str.split(' '); 
+  var longestWord = '';
+  for (var i = 0; i < words.length; i++) {
+    var word = words[i];
+    if (word.length > longestWord.length) {
+      longestWord = word;
+    }
+  }
+  return longestWord;
+}
+var input = prompt("Enter a sentence:");
+var output = findLongestWord(input);
+document.write("Output:", output);
 
 // 13. Write a JavaScript function that accepts two arguments, a 
 // string and a letter and the function will count the number of 
 // occurrences of the specified letter within the string. 
 // Sample arguments : 'JSResourceS.com', 'o'
 document.write("<h3>Task 13</h3>");
+function countLetterOccurrences(str, letter) {
+  var count = 0;
+  var lowerStr = str.toLowerCase();
+  var lowerLetter = letter.toLowerCase();
+  for (var i = 0; i < lowerStr.length; i++) {
+    if (lowerStr[i] === lowerLetter) {
+      count++;
+    }
+  } 
+  return count;
+}
+var inputString = 'JSResourceS.com';
+var inputLetter = 'o';
+var occurrenceCount = countLetterOccurrences(inputString, inputLetter);
+document.write("Number of occurrences:"+ occurrenceCount);
 
 // 14. The Geometrizer
 // Create 2 functions that calculate properties of a circle, using 
 // the definitions here.
 // Create a function called calcCircumference:
 document.write("<h3>Task 14</h3>");
-
 // • Pass the radius to the function.
-
 // • Calculate the circumference based on the radius, and output 
 // "The circumference is NN".
 // Create a function called calcArea:
-
 // • Pass the radius to the function.
-
 // • Calculate the area based on the radius, and output "The area is NN".
 // Circumference of circle = 2πr
 // Area of circle = πr2
+function calcCircumference(radius) {
+  var circumference = 2 * Math.PI * radius;
+  console.log("The circumference is " + circumference);
+}
+function calcArea(radius) {
+  var area = Math.PI * radius * radius;
+  console.log("The area is " + area);
+}
+var radius = parseFloat(prompt("Enter the radius of the circle:"));
+calcCircumference(radius);
+calcArea(radius);
