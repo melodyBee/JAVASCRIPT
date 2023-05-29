@@ -1,15 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    Assignment -1 
+    <h2>Assignment -43-48</h2>
+
+    <!-- Task 1 -->
+    <a href="#" onclick="showAlert()">Click me</a>
+
+    <!-- Task 2 -->
+    <img src="https://i.pinimg.com/564x/c6/26/cc/c626cc2d5205641ca103538542c1b588.jpg" class="mobile-image"
+        onclick="showAlert('You clicked on Mobile 1')">
+    <img src="https://i.pinimg.com/564x/31/e4/61/31e461156afbdb69717b3fc550cd3c46.jpg" class="mobile-image"
+        onclick="showAlert('You clicked on Mobile 2')">
+    <img src="https://i.pinimg.com/564x/1f/0f/10/1f0f106910b1482281537e890ef6303e.jpg" class="mobile-image"
+        onclick="showAlert('You clicked on Mobile 3')">
+
+    <!-- Task 3 -->
+    <table id="studentTable">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Grade</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>18</td>
+            <td>12</td>
+            <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>Mark</td>
+            <td>20</td>
+            <td>10</td>
+            <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+    </table>
+    <!-- Task 4 -->
+    <img id="myImage" src="first_image.jpg" onmouseover="changeImage('myImage', 'second_image.jpg')"
+        onmouseout="restoreImage('myImage', 'first_image.jpg')">
+    <h2>Counter: <span id="counter">0</span></h2>
+    <button onclick="increaseCounter()">Increase</button>
+    <button onclick="decreaseCounter()">Decrease</button>
 
     <script src="./app.js">
     </script>
+
 </body>
+
 </html>
