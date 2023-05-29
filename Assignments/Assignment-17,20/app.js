@@ -21,7 +21,12 @@ for(i=1;i<11;i++){
 // number using for loop. Table number & length should be 
 // taken as an input from user.
 document.write('<h3> Task 4 </h3>');
-
+var num=prompt("Enter the number you want multiplication of:");
+var length=prompt("Enter the length of the table");
+for(i=1;i<length;i++){
+    answer=num*i;
+    document.write(num +"x"+ i +"="+ answer +"<br>")
+}
 // 5. Write a program to print items of the following array 
 // using for loop:
 document.write('<h3> Task 5 </h3>');
