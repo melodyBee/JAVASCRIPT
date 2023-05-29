@@ -225,3 +225,4 @@ function calculateCurrencyNotes(amount) {
   document.write("<br>Number of 50 notes: " + currencyNotes.fiftyNotes);
   document.write("<br>Number of 10 notes: " + currencyNotes.tenNotes);
   
+  
