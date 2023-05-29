@@ -1,15 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    Assignment -1 
+<style>
+    .item {
+        border: 1px solid #000;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
 
+    .item .details {
+        display: none;
+    }
+</style>
+
+<body>
+    <h2>Assignment 49-52</h2>
+    <!-- Task 1 -->
+    <h2>Signup form</h2>
+    <form>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" required><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br>
+
+        <input type="button" value="Submit" onclick="displayFormData()">
+    </form>
+    <h3>Form Data:</h3>
+    <div id="formDataDisplay"></div>
+
+    <h2>Item Details</h2>
+
+    <div class="item">
+        <h3>Item 1</h3>
+        <p>Short description of Item 1.</p>
+        <div class="details">
+            <p>Full details of Item 1.</p>
+            <p>Additional information about Item 1.</p>
+        </div>
+        <button onclick="showDetails(this)">Read more</button>
+    </div>
+
+    <div class="item">
+        <h3>Item 2</h3>
+        <p>Short description of Item 2.</p>
+        <div class="details">
+            <p>Full details of Item 2.</p>
+            <p>Additional information about Item 2.</p>
+        </div>
+        <button onclick="showDetails(this)">Read more</button>
+    </div>
+
+    <h2>Please enter your details</h2>
+
+    <form onsubmit="event.preventDefault(); addStudent();">
+        <label for="name">Name: </label>
+        <input type="text" id="name" required>
+        <br>
+        <label for="age">Age: </label>
+        <input type="number" id="age" required>
+        <br>
+        <button type="submit">Add Student</button>
+    </form>
+
+    <table id="student-table">
+        <td>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Actions</th>
+        </td>
+    </table>
+
+    <div id="hidden-form" style="display: none;">
+    <form onsubmit="event.preventDefault(); updateStudent();">
+        <label for="edit-name">Name: </label>
+        <input type="text" id="edit-name" required>
+        <br>
+        <label for="edit-age">Age: </label>
+        <input type="number" id="edit-age" required>
+        <br>
+        <button type="submit">update Student information</button>
+    </form>
+</div>
     <script src="./app.js">
     </script>
 </body>
+
 </html>
