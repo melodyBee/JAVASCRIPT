@@ -60,30 +60,58 @@ var squareNum=prompt("Enter the number you want square of");
 
 // 6. Write a function that computes factorial of a number.
 document.write("<h3>Task 6</h3>");
+function factorial ()
+{
+var a,y,b=1;
+var y=prompt("Enter a number:");
+for(a=y;a>=1;a--)
+b=a*b;
+
+document.write("<br>The factorial is "+ b );
+}
+factorial();
 
 // 7. Write a function that take start and end number as inputs 
 // & display counting in your browser.
 document.write("<h3>Task 7</h3>");
+var a=prompt("Enter Start of the counting");
+var z=prompt("Enter the end of the counting");
+for(i=a;i<z;i++){
+  document.write(i +"<br>");
+}
 
 // 8. Write a nested function that computes hypotenuse of a 
 // right angle triangle. 
 // Hypotenuse2 = Base2 + Perpendicular2
 document.write("<h3>Task 8</h3>");
-
 // Take base and perpendicular as inputs.
+var base=prompt("Enter base");
+var perpendicular=prompt("Enter perpendicular");
 // Outer function : calculateHypotenuse()
+function hypotenuse(a,b){
+  var Hypotenuse2 = (a*2*2) + (b*2*2);
 // Inner function: calculateSquare()
+  function Squarefunc(Hypotenuse){
+
+  }
+}
+
+//calling the function
+hypotenuse(base,perpendicular);
 
 // 9. Write a function that calculates the area of a rectangle.
 document.write("<h3>Task 9</h3>");
-
 //  A = width * height
 //  Pass width and height in following manner:
-
 //  i. Arguments as value
-
 //  ii. Arguments as variables
-
+var a=prompt("Enter width of the rectangle");
+var b=prompt("Enter height of the rectangle");
+function areaOfRec(width,height){
+  var A = width * height;
+  document.write("Area of rectangle is= "+ A );
+}
+areaOfRec(a,b);
 //  10. Write a JavaScript function that checks whether a passed 
 // string is palindrome or not?
 // A palindrome is word, phrase, or sequence that reads the same backward as 
