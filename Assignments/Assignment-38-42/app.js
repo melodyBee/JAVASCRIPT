@@ -12,7 +12,7 @@ function power(a, b) {
   var base = parseFloat(prompt("Enter the base number:"));
   var exponent = parseInt(prompt("Enter the exponent:"));
   var result = power(base, exponent);
-  console.log(base + " raised to the power of " + exponent + " is " + result);
+ document.write(b<br>ase + " raised to the power of " + exponent + " is " + result);
   
 // 2. Any year is entered through the keyboard. Write a function to 
 // determine whether the year is a leap year or not.
@@ -27,9 +27,9 @@ function isLeapYear(year) {
 }
 var year = parseInt(prompt("Enter a year:"));
 if (isLeapYear(year)) {
-    console.log(year + " is a leap year.");
+   document.write(y<br>ear + " is a leap year.");
 } else {
-    console.log(year + " is not a leap year.");
+   document.write(y<br>ear + " is not a leap year.");
 }
 
 // 3. If the lengths of the sides of a triangle are denoted by a, b, and 
@@ -77,8 +77,8 @@ function mainFunction() {
     var subject3Marks = parseFloat(prompt("Enter marks for subject 3:"));
     var averageMarks = calculateAverage(subject1Marks, subject2Marks, subject3Marks);
     var percentageMarks = calculatePercentage(subject1Marks, subject2Marks, subject3Marks);
-    console.log("Average marks:", averageMarks);
-    console.log("Percentage marks:", percentageMarks);
+   document.write("<br>Average marks:", averageMarks);
+   document.write("<br>Percentage marks:", percentageMarks);
 }
 mainFunction();
 
@@ -97,7 +97,7 @@ function customIndexOf(str, searchChar) {
   var str = "Hello, World!";
   var searchChar = "o";
   var index = customIndexOf(str, searchChar);
-  console.log(index); // Output: 4
+ document.write(i<br>ndex); // Output: 4
   
 // 6. Write a function to delete all vowels from a sentence. Assume 
 // that the sentence is not more than 25 characters long.
@@ -116,7 +116,7 @@ function deleteVowels(sentence) {
   }
   var sentence = "Hello, how are you?";
   var modifiedSentence = deleteVowels(sentence);
-  document.write(modifiedSentence); 
+  document.write(m<br>odifiedSentence); 
   
 // 7. Write a function with switch statement to count the number of 
 // occurrences of any two vowels in succession in a line of text. 
@@ -146,7 +146,7 @@ function countSuccessiveVowels(text) {
   }
   var sentence = "Pleases read this application and give me gratuity";
   var occurrences = countSuccessiveVowels(sentence);
-  document.write("Number of occurrences: " + occurrences); 
+  document.write("<br>Number of occurrences: " + occurrences); 
   
 // 8. The distance between two cities (in km.) is input through the 
 // keyboard. Write four functions to convert and print this 
@@ -171,19 +171,57 @@ function convertToMeters(distanceInKm) {
   var distanceInInches = convertToInches(distanceInKm);
   var distanceInCentimeters = convertToCentimeters(distanceInKm);
   
-  console.log("Distance in Meters: " + distanceInMeters);
-  console.log("Distance in Feet: " + distanceInFeet);
-  console.log("Distance in Inches: " + distanceInInches);
-  console.log("Distance in Centimeters: " + distanceInCentimeters);
+ document.write("<br>Distance in Meters: " + distanceInMeters);
+ document.write("<br>Distance in Feet: " + distanceInFeet);
+ document.write("<br>Distance in Inches: " + distanceInInches);
+ document.write("<br>Distance in Centimeters: " + distanceInCentimeters);
   
 // 9. Write a program to calculate overtime pay of employees. 
 // Overtime is paid at the rate of Rs. 12.00 per hour for every hour 
 // worked above 40 hours. Assume that employees do not work 
 // for fractional part of an hour.
 document.write("<>Task 9</>");
+
+function calculateOvertimePay(hoursWorked) {
+    var normalHours = 40;
+    var overtimeRate = 12.00;
+    var overtimePay = 0;
+    if (hoursWorked>normalHours) {
+      var overtimeHours = hoursWorked-normalHours;
+      overtimePay = overtimeHours*overtimeRate;
+    }
+    return overtimePay;
+  }
+  var hoursWorked = parseFloat(prompt("Enter the number of hours worked:"));
+  var overtimePay = calculateOvertimePay(hoursWorked);
+  document.write("<br>Overtime Pay: Rs. " + overtimePay);
+  
 // 10. A cashier has currency notes of denominations 10, 50 and 
 // 100. If the amount to be withdrawn is input through the 
 // keyboard in hundreds, find the total number of currency notes 
 // of each denomination the cashier will have to give to the 
 // withdrawer.
 document.write("<>Task 10</>");
+function calculateCurrencyNotes(amount) {
+    var hundredNotes = Math.floor(amount / 100);
+    var fiftyNotes = Math.floor((amount % 100) / 50);
+    var tenNotes = Math.floor(((amount % 100) % 50) / 10);
+  
+    return {
+      hundredNotes: hundredNotes,
+      fiftyNotes: fiftyNotes,
+      tenNotes: tenNotes
+    };
+  }
+  
+  // Get the amount to be withdrawn from user input (in hundreds)
+  var amountToWithdraw = parseInt(prompt("Enter the amount to be withdrawn (in hundreds):"));
+  
+  // Calculate the total number of currency notes
+  var currencyNotes = calculateCurrencyNotes(amountToWithdraw);
+  
+  // Print the total number of currency notes
+  document.write("<br>Number of 100 notes: " + currencyNotes.hundredNotes);
+  document.write("<br>Number of 50 notes: " + currencyNotes.fiftyNotes);
+  document.write("<br>Number of 10 notes: " + currencyNotes.tenNotes);
+  
