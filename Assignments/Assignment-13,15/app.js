@@ -94,6 +94,7 @@ var index = parseInt(prompt("Enter an index to delete colors:"));
 var count = parseInt(prompt("Enter how many colors to delete:"));
 colors.splice(index, count);
 console.log(colors);
+
 // 10. Write a program to store student scores in an array & 
 // sort the array in ascending order using Array’s sort 
 // method.
@@ -107,29 +108,54 @@ var studentScores = [80, 95, 75, 85, 90];
 console.log("Before sorting:", studentScores);
 sortStudentScores(studentScores);
 console.log("After sorting:", studentScores);
+
 // 11. Write a program to initialize an array with city names. 
 // Copy 3 array elements from cities array to selectedCities 
 // array.
 document.write('<h3> Task 11 </h3>');
+let cities = ["Karachi", "Lahore", "Islamabad", "Istanbul", "NewYork"];
+let selectedCities = cities.slice(0, 3); 
+console.log(selectedCities);
 
 // 12. Write a program to create a single string from the 
 // below mentioned array:
 // var arr = [“This ”, “ is ”, “ my ”, “ cat”];
 // (Use array’s join method)
 document.write('<h3> Task 12 </h3>');
-
+var arr = ["This ", " is ", " my ", " cat"];
+var str = arr.join(""); 
+console.log(str);
 // 13. Create a new array. Store values one by one in such a way
 // that you can access the values in the order in which they 
 // were stored. (FIFO-First In First Out)
 document.write('<h3> Task 13 </h3>');
-
+var queue = [];
+queue.push("first"); 
+queue.push("second"); 
+queue.push("third"); 
+var first = queue.shift(); 
+var second = queue.shift(); 
+var third = queue.shift();
 
 // 14. Create a new array. Store values one by one in such a way
 // that you can access the values in reverse order. (Last InFirst Out)
 document.write('<h3> Task 14 </h3>');
+var stack = [];
 
+stack.push("first");  
+stack.push("second"); 
+stack.push("third");  
+var third = stack.pop();
+var second = stack.pop();
+var first = stack.pop();
 // 15. Write a program to store phone manufacturers (Apple,
 // Samsung, Motorola, Nokia, Sony & Haier) in an array. 
 // Display the following dropdown/select menu in your 
 // browser using document.write() method:
 document.write('<h3> Task 15 </h3>');
+var phones = ["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"];
+document.write("<select id='phoneList'>");
+for (var i = 0; i < phones.length; i++) {
+  document.write("<option>" + phones[i] + "</option>");
+}
+document.write("</select>");
