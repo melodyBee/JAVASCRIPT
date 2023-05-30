@@ -2,82 +2,81 @@
 // 1. Write a function that displays current date & time in your 
 // browser.
 document.write("<h3>Task 1</h3>");
-function current(){
-   var Date= new Date();
-   document.write(Date); 
+function current() {
+  var Date = new Date();
+  document.write(Date);
 
 }
 
 // 2. Write a function that takes first & last name and then it 
 // greets the user using his full name.
 document.write("<h3>Task 2</h3>");
-function greet(){
-    var firstName=prompt("enter your first name");
-    var lastName=prompt("Enter your last name");
-    document.write('Welcome '+ firstName + ' ' + lastName +'<br>');
+function greet() {
+  var firstName = prompt("enter your first name");
+  var lastName = prompt("Enter your last name");
+  document.write('Welcome ' + firstName + ' ' + lastName + '<br>');
 }
- greet();
+greet();
 
 // 3. Write a function that adds two numbers (input by user) 
 // and returns the sum of two numbers.
 document.write("<h3>Task 3</h3>");
-function add(a,b){
-    var a,b;
-    var sum=parseInt(a) + parseInt(b);
-   document.write('the addition of the numbers you enterd is ='+ sum);
+function add(a, b) {
+  var a, b;
+  var sum = parseInt(a) + parseInt(b);
+  document.write('the addition of the numbers you enterd is =' + sum);
 }
-var input1= prompt("ENter num 1");
-var input2= prompt("Enter num 2");
-add(input1,input2);
+var input1 = prompt("ENter num 1");
+var input2 = prompt("Enter num 2");
+add(input1, input2);
 
 // 4. Calculator:
 document.write("<h3>Task 4</h3>");
 // Write a function that takes three arguments num1, num2 
 // & operator & compute the desired operation. Return and 
 // show the desired result in your browser.
-function desired_op(num1,num2,op){
-    switch(op){
-        case '+': return result=num1+num2; break;
-        case '-': return result=num1-num2; break;
-        case '/': return result=num1/num2; break;
-        case '%': return result=num1%num2; break;
-    }
+function desired_op(num1, num2, op) {
+  switch (op) {
+    case '+': return result = num1 + num2; break;
+    case '-': return result = num1 - num2; break;
+    case '/': return result = num1 / num2; break;
+    case '%': return result = num1 % num2; break;
+  }
 }
-var A= prompt("Input 1");
-var B= prompt("Input 2");
-var C= prompt("Input operator"); 
-var result= desired_op(A,B,C);
+var A = prompt("Input 1");
+var B = prompt("Input 2");
+var C = prompt("Input operator");
+var result = desired_op(A, B, C);
 document.write(result);
 
 // 5. Write a function that squares its argument.
 document.write("<h3>Task 5</h3>");
 function square(x) {
-    return x * x;
-  }
-var squareNum=prompt("Enter the number you want square of");
-  var answer = square(squareNum);
-  document.write("The square of the number you entered is= "+ answer);
+  return x * x;
+}
+var squareNum = prompt("Enter the number you want square of");
+var answer = square(squareNum);
+document.write("The square of the number you entered is= " + answer);
 
 // 6. Write a function that computes factorial of a number.
 document.write("<h3>Task 6</h3>");
-function factorial ()
-{
-var a,y,b=1;
-var y=prompt("Enter a number:");
-for(a=y;a>=1;a--)
-b=a*b;
+function factorial() {
+  var a, y, b = 1;
+  var y = prompt("Enter a number:");
+  for (a = y; a >= 1; a--)
+    b = a * b;
 
-document.write("<br>The factorial is "+ b );
+  document.write("<br>The factorial is " + b);
 }
 factorial();
 
 // 7. Write a function that take start and end number as inputs 
 // & display counting in your browser.
 document.write("<h3>Task 7</h3>");
-var a=prompt("Enter Start of the counting");
-var z=prompt("Enter the end of the counting");
-for(i=a;i<z;i++){
-  document.write(i +"<br>");
+var a = prompt("Enter Start of the counting");
+var z = prompt("Enter the end of the counting");
+for (i = a; i < z; i++) {
+  document.write(i + "<br>");
 }
 
 // 8. Write a nested function that computes hypotenuse of a 
@@ -85,8 +84,8 @@ for(i=a;i<z;i++){
 // Hypotenuse2 = Base2 + Perpendicular2
 document.write("<h3>Task 8</h3>");
 // Take base and perpendicular as inputs.
-var base=prompt("Enter base");
-var perpendicular=prompt("Enter perpendicular");
+var base = prompt("Enter base");
+var perpendicular = prompt("Enter perpendicular");
 
 function hypotenuse(base, perpendicular) {
   function calculateSquare(side) {
@@ -97,9 +96,9 @@ function hypotenuse(base, perpendicular) {
   var hypotenuseSquare = baseSquare + perpendicularSquare;
   var hypotenuse = Math.sqrt(hypotenuseSquare);
 
-  document.write("Hypotenuse ="+ hypotenuse) ;
+  document.write("Hypotenuse =" + hypotenuse);
 }
-hypotenuse(base,perpendicular);
+hypotenuse(base, perpendicular);
 
 // 9. Write a function that calculates the area of a rectangle.
 document.write("<h3>Task 9</h3>");
@@ -107,13 +106,13 @@ document.write("<h3>Task 9</h3>");
 //  Pass width and height in following manner:
 //  i. Arguments as value
 //  ii. Arguments as variables
-var a=prompt("Enter width of the rectangle");
-var b=prompt("Enter height of the rectangle");
-function areaOfRec(width,height){
+var a = prompt("Enter width of the rectangle");
+var b = prompt("Enter height of the rectangle");
+function areaOfRec(width, height) {
   var A = width * height;
-  document.write("Area of rectangle is= "+ A );
+  document.write("Area of rectangle is= " + A);
 }
-areaOfRec(a,b);
+areaOfRec(a, b);
 //  10. Write a JavaScript function that checks whether a passed 
 // string is palindrome or not?
 // A palindrome is word, phrase, or sequence that reads the same backward as 
@@ -123,10 +122,10 @@ function isPalindrome(str) {
   var processedStr = str.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
   for (var i = 0; i < processedStr.length / 2; i++) {
     if (processedStr[i] !== processedStr[processedStr.length - 1 - i]) {
-      return false; 
+      return false;
     }
   }
-  return true; 
+  return true;
 }
 var input = prompt("Enter a word or phrase:");
 var result = isPalindrome(input);
@@ -154,7 +153,7 @@ function capitalizeFirstLetter(str) {
 }
 var input = prompt("Enter a sentence:");
 var output = capitalizeFirstLetter(input);
-document.write("Output:"+ output);
+document.write("Output:" + output);
 
 // 12. Write a JavaScript function that accepts a string as a 
 // parameter and find the longest word within the string. 
@@ -162,7 +161,7 @@ document.write("Output:"+ output);
 // EXPECTED OUTPUT : 'Development'
 document.write("<h3>Task 12</h3>");
 function findLongestWord(str) {
-  var words = str.split(' '); 
+  var words = str.split(' ');
   var longestWord = '';
   for (var i = 0; i < words.length; i++) {
     var word = words[i];
@@ -189,13 +188,13 @@ function countLetterOccurrences(str, letter) {
     if (lowerStr[i] === lowerLetter) {
       count++;
     }
-  } 
+  }
   return count;
 }
 var inputString = 'JSResourceS.com';
 var inputLetter = 'o';
 var occurrenceCount = countLetterOccurrences(inputString, inputLetter);
-document.write("Number of occurrences:"+ occurrenceCount);
+document.write("Number of occurrences:" + occurrenceCount);
 
 // 14. The Geometrizer
 // Create 2 functions that calculate properties of a circle, using 

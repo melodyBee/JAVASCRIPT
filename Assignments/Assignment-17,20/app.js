@@ -8,25 +8,25 @@ var emptyArray = [];
 // representing the following matrix:
 document.write('<h3> Task 2 </h3>');
 var matrix = [
-    [0, 1, 2, 3],
-    [1, 0, 1, 2],
-    [2, 1, 0, 1]
-  ];
-  console.log(matrix);
+  [0, 1, 2, 3],
+  [1, 0, 1, 2],
+  [2, 1, 0, 1]
+];
+console.log(matrix);
 // 3. Write a program to print numeric counting from 1 to 10.
 document.write('<h3> Task 3 </h3>');
-for(i=1;i<11;i++){
-    document.write(i +"<br>")
+for (i = 1; i < 11; i++) {
+  document.write(i + "<br>")
 }
 // 4. Write a program to print multiplication table of any 
 // number using for loop. Table number & length should be 
 // taken as an input from user.
 document.write('<h3> Task 4 </h3>');
-var num=prompt("Enter the number you want multiplication of:");
-var length=prompt("Enter the length of the table");
-for(i=1;i<length;i++){
-    answer=num*i;
-    document.write(num +"x"+ i +"="+ answer +"<br>")
+var num = prompt("Enter the number you want multiplication of:");
+var length = prompt("Enter the length of the table");
+for (i = 1; i < length; i++) {
+  answer = num * i;
+  document.write(num + "x" + i + "=" + answer + "<br>")
 }
 // 5. Write a program to print items of the following array 
 // using for loop:
@@ -111,7 +111,7 @@ console.log(smallest);
 // 10. Write a program to print multiples of 5 ranging 1 to 100.
 document.write('<h3> Task 10 </h3>');
 for (var i = 1; i <= 100; i++) {
-    if (i % 5 == 0) {
-      console.log(i);
-    }
+  if (i % 5 == 0) {
+    console.log(i);
   }
+}

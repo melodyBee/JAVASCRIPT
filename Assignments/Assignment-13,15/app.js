@@ -30,7 +30,7 @@ var mixed = [1, "hello", true, 3.14, ["a", "b", "c"]];
 // BS, BCOM, MS, M. Phil., PhD). Show the listed 
 // qualifications in your browser like:
 document.write('<h3> Task 7 </h3>');
-var edQualification=[' SSC', 'HSC', 'BCS', 'BS', 'BCOM', 'MS', 'M. Phil', 'PhD']
+var edQualification = [' SSC', 'HSC', 'BCS', 'BS', 'BCOM', 'MS', 'M. Phil', 'PhD']
 document.write("<h1>Qualifications:</h1>");
 for (var i = 0; i < edQualification.length; i++) {
   document.write((i + 1) + ") " + edQualification[i] + "<br>");
@@ -100,7 +100,7 @@ console.log(colors);
 // method.
 document.write('<h3> Task 10 </h3>');
 function sortStudentScores(scores) {
-  scores.sort(function(a, b) {
+  scores.sort(function (a, b) {
     return a - b;
   });
 }
@@ -114,7 +114,7 @@ console.log("After sorting:", studentScores);
 // array.
 document.write('<h3> Task 11 </h3>');
 let cities = ["Karachi", "Lahore", "Islamabad", "Istanbul", "NewYork"];
-let selectedCities = cities.slice(0, 3); 
+let selectedCities = cities.slice(0, 3);
 console.log(selectedCities);
 
 // 12. Write a program to create a single string from the 
@@ -123,18 +123,18 @@ console.log(selectedCities);
 // (Use array’s join method)
 document.write('<h3> Task 12 </h3>');
 var arr = ["This ", " is ", " my ", " cat"];
-var str = arr.join(""); 
+var str = arr.join("");
 console.log(str);
 // 13. Create a new array. Store values one by one in such a way
 // that you can access the values in the order in which they 
 // were stored. (FIFO-First In First Out)
 document.write('<h3> Task 13 </h3>');
 var queue = [];
-queue.push("first"); 
-queue.push("second"); 
-queue.push("third"); 
-var first = queue.shift(); 
-var second = queue.shift(); 
+queue.push("first");
+queue.push("second");
+queue.push("third");
+var first = queue.shift();
+var second = queue.shift();
 var third = queue.shift();
 
 // 14. Create a new array. Store values one by one in such a way
@@ -142,9 +142,9 @@ var third = queue.shift();
 document.write('<h3> Task 14 </h3>');
 var stack = [];
 
-stack.push("first");  
-stack.push("second"); 
-stack.push("third");  
+stack.push("first");
+stack.push("second");
+stack.push("third");
 var third = stack.pop();
 var second = stack.pop();
 var first = stack.pop();

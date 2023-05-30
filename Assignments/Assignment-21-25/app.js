@@ -90,7 +90,7 @@ document.write("<h2>Task 11</h2>");
 var userInput = prompt("Enter a string:");
 var words = userInput.split(' ');
 var titleCase = '';
-for (i= 0; i<words.length; i++) {
+for (i = 0; i < words.length; i++) {
   var word = words[i];
   var firstLetter = word.charAt(0).toUpperCase();
   var restOfWord = word.slice(1).toLowerCase();

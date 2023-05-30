@@ -17,7 +17,7 @@ document.write("Ceil value: " + ceilValue + "<br>");
 
 // 2. Write a program that takes a negative floating point
 // number from user & display the following in your browser.
-var negativeInt= prompt("Enter a negative floating-point number:");
+var negativeInt = prompt("Enter a negative floating-point number:");
 // a. number
 var number = parseFloat(userInput);
 // b. round off value of the number

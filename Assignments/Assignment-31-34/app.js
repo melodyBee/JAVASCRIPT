@@ -89,9 +89,9 @@ console.log(laterDate);
 // Note: 1st Ramadan was on June 18, 2015
 document.write("<h2>Task 9</h2>");
 
-var startingDate= new Date(2015,5,18);
-var currentDate=new Date();
-var timeDiff=currentDate.getTime() - startingDate.getTime();
+var startingDate = new Date(2015, 5, 18);
+var currentDate = new Date();
+var timeDiff = currentDate.getTime() - startingDate.getTime();
 var daysPassed = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
 
 // 10. Write a program that displays in your browser the 
