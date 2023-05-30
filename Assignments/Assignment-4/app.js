@@ -16,8 +16,8 @@ var a, name, Age, var_iable, vArIaBlE;
 // d) Variable names are case _________
 // e) Variable names should not be JS _________ 
 
-document.write('Rules for naming JS variables\n');
-document.write('Variable names can only contain Alphabets, numbers,underscore(_)and Doller sign($).');
-document.write('Variables must begin with an alphabet, underscore or number. For example $name, _name or name')
-document.write('Variable names are case sensitive');
+document.write('Rules for naming JS variables<br>');
+document.write('Variable names can only contain Alphabets, numbers,underscore(_)and Doller sign($).<br>');
+document.write('Variables must begin with an alphabet, underscore or number. For example $name, _name or name<br>')
+document.write('Variable names are case sensitive<br>');
 document.write('Variable names should not be JS keywords words.')
