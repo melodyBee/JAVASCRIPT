@@ -12,6 +12,7 @@ var matrix = [
     [1, 0, 1, 2],
     [2, 1, 0, 1]
   ];
+  console.log(matrix);
 // 3. Write a program to print numeric counting from 1 to 10.
 document.write('<h3> Task 3 </h3>');
 for(i=1;i<11;i++){

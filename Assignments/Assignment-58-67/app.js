@@ -21,7 +21,8 @@
 // </div>
 
 // i. Get element of id “main-content” and assign them in a variable.
-
+var content= document.getElementById('main-content');
+console.log(content);
 // ii. Display all child elements of “main-content” element.
 
 // iii. Get all elements of class “render” and show their innerHTML 
