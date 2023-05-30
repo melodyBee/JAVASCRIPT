@@ -7,17 +7,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>53-57</title>
 </head>
+<style>
+    body {
+        background-color: #cda274;
+    }
+
+    button {
+        color: #765341;
+        font-size: xx-large;
+        width: 50px;
+    }
+</style>
 
 <body>
     <h1>Assignment 53-57</h1>
+    <h2>Task 1</h2>
+    <div class="image-container">
+        <img style="width: 236px" ; src="https://i.pinimg.com/564x/39/40/5a/39405abaa42dbd37ea845919c6892850.jpg"
+            alt="Image 1" onclick="openModal('image1.jpg')">
+        <img style="width: 236px" src="https://i.pinimg.com/236x/3e/b8/c6/3eb8c6e50f4043b6f21662126d9243f8.jpg"
+            alt="Image 2" onclick="openModal('image2.jpg')">
+        <img style="width: 236px;" src="https://i.pinimg.com/236x/97/6b/7b/976b7bd9f59a24521e1994ebed3a95ea.jpg"
+            alt="Image 3" onclick="openModal('image3.jpg')">
+        <img style="width: 236px" src="https://i.pinimg.com/564x/61/ad/b8/61adb855c08431894a3464abd22a1ad7.jpg"
+            alt="Image 4" onclick="openModal('image4.jpg')">
+    </div>
+
+    <div id="modal" style="display: none;">
+        <span
+            style="color: #fff; position: absolute; top: 20px; right: 30px; font-size: 30px; font-weight: bold; cursor: pointer;"
+            onclick="closeModal()">×</span>
+        <img id="modal-image" src="" alt="Modal Image"
+            style="display: block; margin: auto; max-width: 90%; max-height: 90%;">
+    </div>
 
     <h2>Task 2</h2>
-    <h3>Beauty</h3>
-    <p id="text">Beauty is a subjective experience that can be found in many things, from nature to art to human
+    <h1 style="color: #3d251e;">Beauty</h1>
+    <p id="text" style="color: #4c3228;">Beauty is a subjective experience that can be found in many things, from nature
+        to art to human
         relationships. It is often associated with feelings of awe, wonder, and pleasure, and can inspire people to
         create and appreciate things of great value and significance.</p>
-    <button onclick="zoomIn()">Zoom In (+)</button>
-    <button onclick="zoomOut()">Zoom Out (-)</button>
+    <button onclick="zoomIn()">+</button>
+    <button onclick="zoomOut()">-</button>
 
     <script src="./app.js">
     </script>
