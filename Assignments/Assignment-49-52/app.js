@@ -1,7 +1,7 @@
 //EVENTS
 // 1. Create a signup form and display form data in your web 
 // page on submission.
-function displayFormData() {
+function FormData() {
     var firstName = document.getElementById("firstName").value;
     var lastName = document.getElementById("lastName").value;
     var email = document.getElementById("email").value;
