@@ -42,8 +42,32 @@ emailInput.value = "johndoe@example.com";
 
 // 2. use HTML code of question 1 and show the result on browser.
 // i. What is node type of element having id “form-content”.
+var node = document.getElementById("form-content");
+console.log("Node type of element with id 'form-content': " + node.nodeType);
+
 // ii. Show node type of element having id “lastName” and its child node.
+var lastName_node = document.getElementById("lastName");
+console.log("Node type of element with id 'lastName': " + lastName_node.nodeType);
+console.log("Child node of element with id 'lastName': " + lastName_node.childNodes[0].nodeType);
+
 // iii. Update child node of element having id “lastName”.
+lastName_node.childNodes[0].nodeValue = "New Value";
+
 // iv. Get First and last child of id “main-content”.
+var mainContentNode = document.getElementById("main-content");
+var firstChild = mainContentNode.firstChild;
+var lastChild = mainContentNode.lastChild;
+console.log("First child of element with id 'main-content': " + firstChild.nodeName);
+console.log("Last child of element with id 'main-content': " + lastChild.nodeName);
+
 // v. Get next and previous siblings of id “lastName”.
+var nextSibling = lastName_node.nextSibling;
+var previousSibling = lastName_node.previousSibling;
+console.log("Next sibling of element with id 'lastName': " + nextSibling.nodeName);
+console.log("Previous sibling of element with id 'lastName': " + previousSibling.nodeName);
+
 // vi. Get parent node and node type of element having id “email”
+var emailNode = document.getElementById("email");
+var parentNode = emailNode.parentNode;
+console.log("Parent node of element with id 'email': " + parentNode.nodeName);
+console.log("Node type of element with id 'email': " + emailNode.nodeType);
