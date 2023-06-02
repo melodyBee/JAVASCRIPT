@@ -17,39 +17,89 @@
         font-size: xx-large;
         width: 50px;
     }
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .modal-content {
+        display: block;
+        margin: auto;
+        max-width: 80%;
+        max-height: 80%;
+    }
+
+    .modal-content img {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-height: 100%;
+        margin: auto;
+    }
+
+    .zoomfunc {
+        display: flex;
+    }
+
+    .para {
+        width: 80%
+    }
 </style>
 
 <body>
     <h1>Assignment 53-57</h1>
     <h2>Task 1</h2>
-    <div class="image-container">
-        <img style="width: 236px" ; src="https://i.pinimg.com/564x/39/40/5a/39405abaa42dbd37ea845919c6892850.jpg"
-            alt="Image 1" onclick="openModal('image1.jpg')">
-        <img style="width: 236px" src="https://i.pinimg.com/236x/3e/b8/c6/3eb8c6e50f4043b6f21662126d9243f8.jpg"
-            alt="Image 2" onclick="openModal('image2.jpg')">
-        <img style="width: 236px;" src="https://i.pinimg.com/236x/97/6b/7b/976b7bd9f59a24521e1994ebed3a95ea.jpg"
-            alt="Image 3" onclick="openModal('image3.jpg')">
-        <img style="width: 236px" src="https://i.pinimg.com/564x/61/ad/b8/61adb855c08431894a3464abd22a1ad7.jpg"
-            alt="Image 4" onclick="openModal('image4.jpg')">
+
+
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
     </div>
 
-    <div id="modal" style="display: none;">
-        <span
-            style="color: #fff; position: absolute; top: 20px; right: 30px; font-size: 30px; font-weight: bold; cursor: pointer;"
-            onclick="closeModal()">x </span>
-        <img id="modal-image" src="" alt="Modal Image"
-            style="display: block; margin: auto; max-width: 90%; max-height: 90%;">
+    <div>
+        <img style="width: 330px" ; src="https://i.pinimg.com/564x/39/40/5a/39405abaa42dbd37ea845919c6892850.jpg"
+            onclick="openModal('https://i.pinimg.com/564x/39/40/5a/39405abaa42dbd37ea845919c6892850.jpg')">
+        <img style="width: 330px" ; src="https://i.pinimg.com/236x/3e/b8/c6/3eb8c6e50f4043b6f21662126d9243f8.jpg"
+            onclick="openModal('https://i.pinimg.com/236x/3e/b8/c6/3eb8c6e50f4043b6f21662126d9243f8.jpg')">
+        <img style="width: 330px" ; src="https://i.pinimg.com/236x/97/6b/7b/976b7bd9f59a24521e1994ebed3a95ea.jpg"
+            onclick="openModal('https://i.pinimg.com/236x/97/6b/7b/976b7bd9f59a24521e1994ebed3a95ea.jpg')">
+        <img style="width: 330px" ; src="https://i.pinimg.com/564x/61/ad/b8/61adb855c08431894a3464abd22a1ad7.jpg"
+            onclick="openModal('https://i.pinimg.com/564x/61/ad/b8/61adb855c08431894a3464abd22a1ad7.jpg')">
     </div>
 
     <h2>Task 2</h2>
-    <h1 style="color: #3d251e;">Beauty</h1>
-    <p id="text" style="color: #4c3228;">Beauty is a subjective experience that can be found in many things, from nature
-        to art to human
-        relationships. It is often associated with feelings of awe, wonder, and pleasure, and can inspire people to
-        create and appreciate things of great value and significance.</p>
-    <button onclick="zoomIn()">+</button>
-    <button onclick="zoomOut()">-</button>
-
+    <div class="zoomfunc">
+        <div class="para">
+            <h1 style="color: #3d251e;">Beauty</h1>
+            <p id="text" style="color: #4c3228;">Beauty is a subjective experience that can be found in many things,
+                from
+                nature
+                to art to human
+                relationships. It is often associated with feelings of awe, wonder, and pleasure, and can inspire people
+                to
+                create and appreciate things of great value and significance.</p>
+            <p id="text" style="color: #4c3228;">Beauty is a deeply personal experience that can be found in many
+                different aspects of life. It is often
+                associated with aesthetic pleasure, but it can also be found in the way we interact with others, the
+                experiences we have, and the way we learn and grow. Beauty is subjective, meaning that what one person
+                finds beautiful, another may not. However, it is a powerful force that can inspire creativity, stimulate
+                the imagination, and bring joy to our lives. Whether we find beauty in the natural world, in great works
+                of art, or in the kindness of others, it has the power to uplift us and enrich our lives in countless
+                ways.</p>
+        </div>
+        <div class="buttons"></div>
+        <button onclick="zoomIn()">+</button>
+        <button onclick="zoomOut()">-</button>
+    </div>
+    </div>
     <script src="./app.js">
     </script>
 </body>
