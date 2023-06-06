@@ -3,9 +3,9 @@
 // your age in an alert box.
 var age = 16;
 alert("I am " + age + " Years old.");
+
 // 2. Declare & initialize a variable to keep track of how many times a visitor has visited a web page. Show his/her
 // number of visits on your web page. For example: “You have visited this site N times”.
-
 var visits = localStorage.getItem('visits');
 
 if (visits === null) {

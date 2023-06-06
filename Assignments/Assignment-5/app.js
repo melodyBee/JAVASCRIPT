@@ -122,6 +122,7 @@ var ten_var = 7;
 // c. Divide the result by 2
 // Perform all calculations in a single expression
 document.write(((ten_var + 5) * 10) / 2);
+
 // 11. The Age Calculator: Forgot how old someone is? 
 // Calculate it!
 document.write('<h3> Task 11 </h3>');
@@ -134,6 +135,7 @@ var birth_year = prompt('Enter the Year of birth');
 var Age = current_year - birth_year;
 // Output them to the screen like so: “They are NN ”.
 document.write('Current Year= 2023<br>Birth Year=' + birth_year + '<br>Your age is=' + Age);
+
 // 12. The Geometrizer: Calculate properties of a circle.
 document.write('<h3> Task 12 </h3>');
 // a. Store a radius into a variable.

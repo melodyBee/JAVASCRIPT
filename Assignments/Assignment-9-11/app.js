@@ -49,7 +49,7 @@ else {
 // 5. Run this script, & check whether alert message would be
 // displayed or not. Record the outputs.
 // a. 
-// document.write('<h3> Task 5 </h3>');
+document.write('<h3> Task 5 </h3>');
 
 // var a = 4;
 // if (++a === 5){
