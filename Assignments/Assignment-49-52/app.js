@@ -10,7 +10,10 @@ function FormData() {
     "Last Name: " + lastName + "<br>" +
     "Email: " + email;
 
-  // document.getElementById("formDataDisplay").innerHTML = formData;
+  document.getElementById("formDataDisplay").innerHTML = formData;
+  for(var i=0;i<formDataDisplay.length; i++ ){
+    console.log( [i]);
+  }
 }
 // 2. Suppose in your webpage there is content area in which
 // you have entered your item details, but user can only see 
